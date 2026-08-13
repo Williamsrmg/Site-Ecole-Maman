@@ -1,3 +1,4 @@
+import BilanHoraire from './BilanHoraire'
 import { useState, useMemo } from "react"
 import { useCreneaux } from "../../hooks/useCreneaux"
 import type { Creneau, JourSemaine } from "../../types/creneau"
@@ -94,6 +95,7 @@ export default function EmploiDuTempsGrille() {
           + Ajouter
         </button>
       </div>
+        <div className="mb-6"><BilanHoraire /></div>
 
       <div className="overflow-x-auto rounded-lg border border-slate-200">
         <table className="min-w-full border-collapse text-sm">
